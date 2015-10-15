@@ -132,7 +132,7 @@ def pcaCode():
     Yp = hier.fclusterdata(Xp, 1.15)
     print "Num. Clusters (with PCA): %s"%max(Yp)
 
-videos = ["signing2.mp4", "signing3.mp4"]
+videos = ["sample_data/signing2.mp4", "sample_data/signing3.mp4"]
 descs_by_frames = scrape_SIFTdescs(videos)
 
 ##Convert descs from all videos, frames into single observation matrix.
@@ -148,7 +148,7 @@ for descs in descs_by_frames:
 #codebook, distort = vq.kmeans(vq.whiten(A), max(C))
 codebook, distort = vq.kmeans(vq.whiten(A), 15)
 
-test_frames = scrape_SIFTdescs(["signing.mp4"])
+test_frames = scrape_SIFTdescs(["sample_data/signing.mp4"])
 X = quantize_SIFTdescs(test_frames, codebook)
 
 pca = deco.PCA(n_components = X.shape[1])
