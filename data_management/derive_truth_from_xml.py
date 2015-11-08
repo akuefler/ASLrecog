@@ -190,7 +190,7 @@ def write_truth_csv(filename, utter_rep, meta_knowledge):
 
 # Given meta knowledge and an utterance, return a tuple indicating
 # the start and end frame for a wh-word
-def get_start_and_end_of_wh(meta_knowledge, utter_rep):       
+def get_start_and_end_frame_of_wh(meta_knowledge, utter_rep):       
     scaling = get_scaling_factor(meta_knowledge)
     nframes = meta_knowledge["frames"]
     
@@ -199,17 +199,26 @@ def get_start_and_end_of_wh(meta_knowledge, utter_rep):
     endFrame = convert_to_frames(item["end"], scaling, nframes)
     
     return startFrame, endFrame 
-                
+      
+# Given meta knowledge and an utterance, return a tuple indicating
+# the start and end frame for a wh-word
+def get_start_and_end_ms_of_wh(meta_knowledge, utter_rep):       
+    item = utter_rep["POS => (Wh-word)"]
+    return item["start"], item["end"] 
+
 def append_to_overview(overview_filename, utter_rep, truth_fn, meta_knowledge):
-    whStart, whEnd = get_start_and_end_of_wh(meta_knowledge, utter_rep)
+    whStartFrame, whEndFrame = get_start_and_end_frame_of_wh(meta_knowledge, utter_rep)
+    whStartMs, whEndMs = get_start_and_end_ms_of_wh(meta_knowledge, utter_rep)
     
     with open(overview_filename, "ab") as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
         writer.writerow([truth_fn] + 
                         [meta_knowledge["english"]] + 
                         [meta_knowledge["frames"]] + 
-                        [whStart] + 
-                        [whEnd] + 
+                        [whStartFrame] + 
+                        [whEndFrame] + 
+                        [whStartMs] + 
+                        [whEndMs] + 
                         [meta_knowledge["msStart"]] + 
                         [meta_knowledge["msEnd"]] + 
                         [meta_knowledge["fnOurs"]])
