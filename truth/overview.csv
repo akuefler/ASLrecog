@@ -1,0 +1,45 @@
+file id,English,num frames,wh frame start,wh frame end,ms start, ms end,our long id
+accident-049,He wanted to check if I had some air in my finger which could cause an infection.,130,90,94,0,4333,accident-049-WANT_CHECK_IF_1hHAVE_SOME_
+accident-046,I felt funny because a plastic surgeon was going to give me the stitches.,111,34,36,0,3667,accident-046-IX-1p_LOOKq_FEEL_FUNNY_25WHY_
+ali-036,"He died way back, when I was around 8 years old.",113,84,88,0,3733,ali-036-25WHY_IX-3pi_DIE_5I_dont_
+ali-032,...because Muhammad Ali has Parkinson's Disease...,105,3,4,0,3500,ali-032-25WHY_IX-3pk_fs-MUHAMMAD_
+biker-005,You know where he is now? In the hospital with broken ribs...,108,36,38,0,3600,biker-005-MOTORCYCLE_IX-3pi_REALLY
+boston-la-050,"In Northridge, it tends to be ten to fifteen degrees hotter than LA.",126,14,20,0,4167,boston-la-050-DEGREE_BECAUSE_WHERE_IX-1p_
+boston-la-045,Why? Because they have a better sewer system in Boston to drain water.,110,3,4,0,3633,boston-la-045-25WHY_IX-3p-pl-arck_
+boston-la-061,"No matter who we are, it is important to have diversity in the group.",79,24,33,0,2633,boston-la-061-GROUPTOGETHER_NO_ANYWAYNOT-MATTER_
+boston-la-053,"If it's 80 degrees here in Boston, it can feel really hot.  But in LA, 80 degrees feels like nothing.",132,4,6,0,4400,boston-la-053-25WHY_HERE_EIGHTY_CAN_REALLY_
+dorm prank-027,"He asked, ""Why did you do that?"" I didn't have an answer, and I felt bad.",90,3,6,0,3000,dorm prank-027-5exasperation_25WHY_
+dorm prank-006,"we would cause problems for our RA, Residence Counselor, you know, the one who checks up on the dorms.",154,111,115,0,5100,dorm prank-006-CAUSE_PROBLEM_FOR_IX-3pj_
+dorm prank-007,"Really, I know, I am sure those who have lived in a dorm, you hate the RAs.  But anyway...",106,33,35,0,3534,dorm prank-007-______REALLY_IX-1p_KNOW_REALLY_
+dorm prank-008,"Really, I had a good time because my RA was my fraternity brother.",109,44,46,0,3633,dorm prank-008-REALLY_IX-1p_ENJOY_25WHY_
+DSP Dead Dog Story-022,"At first he didn't know what to do, but then he had an idea.",123,117,120,0,4100,DSP Dead Dog Story-022-__________________________________DO_pray_THINK_IDEA_WHAT
+DSP Intro to a Story-007,"...written by Rico Peterson,...",104,7,10,0,3467,DSP Intro to a Story-007-_________WHO_WRITE_fs-RICO-PETERSON_
+football-037,"""I want you to come back and sit down where you belong.",62,39,40,0,2067,football-037-IX-1p_WANT_IX-3pp_BACK_2_
+football-013,Especially when football is the only legal sport where you can hit someone that hard and not get fined for it.  ,186,21,24,0,6167,football-013-SPECIALEXCEPTfs-LY_WHEN_
+football-054,"but when a hit is made in football, ",81,23,31,0,2700,football-054-BUT_WHEN_fs-HIT_IS__MAKE_
+football-015,"Really, I've been thinking it reminds me of who really made me get interested in football.  ",130,61,69,0,4333,football-015-REALLY_IX-1p_THINK-OVER_
+lapd-033,Two cops walked toward me.  When they were really close to me...,84,34,40,0,2800,lapd-033-PCLVcops_walking_to_Mike_
+lapd-026,Why are they chasing me? I asked myself.  ,39,4,7,0,1300,lapd-026-partindef_25WHY_CHASE_
+lapd-038,Why did they hit me? I didnt feel anything!,52,8,11,0,1700,lapd-038-5perplexed_25WHY_HIT_
+ncslgr10a-002,When did John finish reading the book?,76,41,52,0,2534,ncslgr10a-002-fs-JOHN_FINISH_READ_2_BOOK_
+ncslgr10a-003,When did John finish reading the book?,71,42,53,0,2366,ncslgr10a-003-fs-JOHN_FINISH_READ_2_BOOK_
+ncslgr10a-005,When will John finish reading the book?,94,68,78,0,3133,ncslgr10a-005-fs-JOHN_FUTURE_FINISH_READ_2_
+ncslgr10a-006,When will John finish reading the book?,82,49,62,0,2733,ncslgr10a-006-fs-JOHN_FUTURE_FINISH_READ_2_
+ncslgr10a-041,Whose car is that?,59,34,39,0,1967,ncslgr10a-041-WHO_CAR_IX-3pi_POSS-3pj_
+ncslgr10a-013,What did John read a book about?,70,49,57,0,2333,ncslgr10a-013-fs-JOHN_READ_2_BOOK_nd-flat-OABOUT_
+ncslgr10a-014,What did John read a book about?,64,43,51,0,2100,ncslgr10a-014-fs-JOHN_READ_2_BOOK_nd-flat-OABOUT_
+ncslgr10a-015,What did John read a book about?,67,43,51,0,2200,ncslgr10a-015-fs-JOHN_READ_2_BOOK_nd-flat-OABOUT_
+ncslgr10e-014,Which book has the student given to the teacher?,78,58,67,0,2600,ncslgr10e-014-WHICH_BOOK_LEARNAGENT_
+ncslgr10f-018,What is John reading a book about? ,52,31,40,0,1733,ncslgr10f-018-fs-JOHN_READ_BOOK_ABOUT_WHAT
+ncslgr10f-019,What is John reading a book about?,63,40,44,0,2100,ncslgr10f-019-fs-JOHN_READ_BOOK_ABOUT_WHAT
+ncslgr10k-017,Who does that car belong to?,62,23,27,0,2033,ncslgr10k-017-IX-3pi_WHO_POSS-3pj_CAR
+ncslgr10k-018,Who's car is that?,58,23,25,0,1926,ncslgr10k-018-IX-3pi_WHO_POSS-3pi_CAR_
+ncslgr10m-041,What did John buy yesterday?  Books.,76,26,31,0,2533,ncslgr10m-041-fs-JOHN_BUY_WHAT_YESTERDAY_
+ncslgr10m-018,Frank is looking for whose book?,88,34,39,0,2900,ncslgr10m-018-fs-FRANK_SEARCH-FOR_WHO_
+ncslgr10m-047,What is it John loves?,66,47,51,0,2200,ncslgr10m-047-WHAT_fs-JOHN_1hLOVE_
+ncslgr10t-019,Where did John go?,67,31,59,0,2233,ncslgr10t-019-fs-JOHN_GO-OUT_WHERE
+ncslgr10t-056,Where are you going?,78,21,36,0,2600,ncslgr10t-056-IX-2p_GO_WHERE_partindef
+roadtrip1-032,"That's so typical of Wymoning. We probably get our meat from there. Very good meat, too, because I ate a steak there.",233,55,59,0,7767,roadtrip1-032-THAT_ns-fs-WYOMING_MAYBE_
+scarystory-053,"""where did it go? where did it go?"" he asks himself.",128,101,110,0,4266,scarystory-053-WHERE_GO-OUT_WHERE_GO-OUT
+speeding-013,"The deaf man asked the hearing man ""where are you going?"" The hearing man tried to use gesture to explain.",89,17,27,0,2933,speeding-013-___________________IX-2p_WHERE_1hGO_1hpartindef_
+three pigs-029,"""I smell pigs.  Where are the pigs that smell so delicious?""  thought the wolf.",114,93,108,0,3766,three pigs-029-WOLF_SMELL_PIG_DELICIOUS_2_
