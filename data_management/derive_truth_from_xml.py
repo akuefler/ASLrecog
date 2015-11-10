@@ -207,8 +207,15 @@ def get_start_and_end_ms_of_wh(meta_knowledge, utter_rep):
     return item["start"], item["end"] 
 
 def append_to_overview(overview_filename, utter_rep, truth_fn, meta_knowledge):
-    whStartFrame, whEndFrame = get_start_and_end_frame_of_wh(meta_knowledge, utter_rep)
-    whStartMs, whEndMs = get_start_and_end_ms_of_wh(meta_knowledge, utter_rep)
+    
+    if "POS => (Wh-word)" in utter_rep:
+        whStartFrame, whEndFrame = get_start_and_end_frame_of_wh(meta_knowledge, utter_rep)
+        whStartMs, whEndMs = get_start_and_end_ms_of_wh(meta_knowledge, utter_rep)
+    else:
+        whStartFrame = ""
+        whEndFrame = ""
+        whStartMs = ""
+        whEndMs = ""
     
     with open(overview_filename, "ab") as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
@@ -300,7 +307,7 @@ def get_frame_counts(countfilename):
             fn_to_count[filename] = count
     return fn_to_count
 
-def get_filename_identifiers_of_interest(path_to_xml_annotations, path_to_frame_count_txt, path_to_video_folders):
+def get_filename_identifiers_of_interest(path_to_xml_annotations, path_to_frame_count_txt, video_files):
     of_interest = {}
 
     # Get the original formats
@@ -312,8 +319,6 @@ def get_filename_identifiers_of_interest(path_to_xml_annotations, path_to_frame_
     fn_to_frame_count = get_frame_counts(path_to_frame_count_txt)
 
     # Match to our video files
-    video_file_path = path_to_video_folders
-    video_files = [f for f in os.listdir(video_file_path) if os.path.isdir(os.path.join(video_file_path, f))]
     for full_filename in video_files:
         our_normalized_video_file = get_normed_filename(full_filename)
         
@@ -345,15 +350,21 @@ def convert_their_id_to_ours(val):
 OUR_FORMAT_STR = "%s-%03d"
     
 # Assumes paths to folders end in /
-path_to_xml_annotations = 'data/annotations/ncslgr-xml/'
-path_to_frame_count_txt = 'data/truth/frameCounts.txt'
-path_to_video_folders = 'data/intraface'
-output_truth_path = 'data/'
+path_to_xml_annotations = 'proj/data/annotations/ncslgr-xml/'
+path_to_frame_count_txt = 'proj/ASLrecog_private/data/truth/frameCounts.txt' # see script
+output_truth_path = 'proj/'
 
-of_interest = get_filename_identifiers_of_interest(path_to_xml_annotations, path_to_frame_count_txt, path_to_video_folders)
+video_file_path = 'proj/data_redux'
+video_files = []
+for dirname, dirnames, filenames in os.walk(video_file_path):
+    for filename in filenames:
+        fn_without_ext, file_extension = os.path.splitext(filename)
+        video_files.append(fn_without_ext)
+
+of_interest = get_filename_identifiers_of_interest(path_to_xml_annotations, path_to_frame_count_txt, video_files)
 
 files = [ f for f in os.listdir(path_to_xml_annotations) if os.path.isfile(os.path.join(path_to_xml_annotations,f)) ]
-for fn in files: #["ncslgr10a.xml"]: #files
+for fn in files:
     print fn + "..."
     tree = ET.parse(path_to_xml_annotations+fn) 
     root = tree.getroot()
