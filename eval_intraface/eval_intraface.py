@@ -170,7 +170,8 @@ def run_evaluation(featureOfInterest):
 	run_labels = []
 	performance_results = []
 
-	models = {"Logistic regression": linear_model.LogisticRegression() }
+	models = {"Logistic regression": linear_model.LogisticRegression(), 
+			  "SVM - RBF Kernel": svm.SVC(kernel='rbf') }
 	for modelId in models:
 		print "####################"
 		print modelId
