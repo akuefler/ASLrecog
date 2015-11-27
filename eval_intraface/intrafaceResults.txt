@@ -1,0 +1,118 @@
+####################
+SVM - RBF Kernel
+####################
+No additional features [13432 examples, 89 features]
+--------------
+Accuracy: 0.66 (+/- 0.12)
+Confusion matrix:
+[[ 3972.  1692.]
+ [ 2887.  4881.]]
+Training examples: 12065
+Test examples: 1367
+Training utterances: 153
+Test utterances: 18
+
+Same-timestep additional features [13432 examples, 467 features]
+--------------
+Accuracy: 0.72 (+/- 0.12)
+Confusion matrix:
+[[ 4372.  1292.]
+ [ 2475.  5293.]]
+Training examples: 12065
+Test examples: 1367
+Training utterances: 153
+Test utterances: 18
+
+Timestep difference features [4364 examples, 1401 features]
+--------------
+Accuracy: 0.74 (+/- 0.07)
+Confusion matrix:
+[[ 1352.   479.]
+ [  635.  1898.]]
+Training examples: 3929
+Test examples: 435
+Training utterances: 154
+Test utterances: 17
+
+Timestep difference features, without removing dupes [13090 examples, 1401 features]
+--------------
+Accuracy: 0.74 (+/- 0.12)
+Confusion matrix:
+[[ 4201.  1313.]
+ [ 2032.  5544.]]
+Training examples: 11759
+Test examples: 1331
+Training utterances: 153
+Test utterances: 18
+
+
+####################
+Logistic regression
+####################
+No additional features  [13432 examples, 89 features]
+--------------
+Accuracy: 0.46 (+/- 0.07)
+Confusion matrix:
+[[ 4983.   681.]
+ [ 6596.  1172.]]
+Most predictive features:
+    lIris_b: -0.00
+    landmark6_x: 0.00
+    landmark16_x: 0.00
+    landmark25_x: 0.00
+    landmark17_x: 0.00
+Training examples: 12065
+Test examples: 1367
+Training utterances: 153
+Test utterances: 18
+
+Same-timestep additional features [13432 examples, 467 features]
+--------------
+Accuracy: 0.46 (+/- 0.07)
+Confusion matrix:
+[[ 4983.   681.]
+ [ 6596.  1172.]]
+Most predictive features:
+    lIris_b: -0.00
+    landmark6_x: 0.00
+    landmark16_x: 0.00
+    landmark25_x: 0.00
+    landmark17_x: 0.00
+Training examples: 12065
+Test examples: 1367
+Training utterances: 153
+Test utterances: 18
+
+Timestep difference features [4364 examples, 1401 features]
+--------------
+Accuracy: 0.45 (+/- 0.13)
+Confusion matrix:
+[[ 1609.   222.]
+ [ 2172.   361.]]
+Most predictive features:
+    shiftTo_lIris_b: -0.00
+    shiftFrom_lIris_b: 0.00
+    lIris_b: -0.00
+    landmark6_x: 0.00
+    landmark16_x: 0.00
+Training examples: 3929
+Test examples: 435
+Training utterances: 154
+Test utterances: 17
+
+Timestep difference features, without removing dupes [13090 examples, 1401 features]
+--------------
+Accuracy: 0.45 (+/- 0.07)
+Confusion matrix:
+[[ 4821.   693.]
+ [ 6487.  1089.]]
+Most predictive features:
+    shiftTo_lIris_b: 0.00
+    shiftFrom_lIris_b: 0.00
+    lIris_b: -0.00
+    landmark6_x: 0.00
+    landmark16_x: 0.00
+Training examples: 11759
+Test examples: 1331
+Training utterances: 153
+Test utterances: 18
